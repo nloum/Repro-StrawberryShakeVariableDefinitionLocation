@@ -1,0 +1,16 @@
+schema {
+    query: Query
+}
+
+type Query {
+    me: ApplicationUser
+}
+
+type ApplicationUser {
+    id: String!
+    name: String!
+    email: String!
+    isAdministrator: Boolean!
+}
+
+directive @aRandomDirective on VARIABLE_DEFINITION
